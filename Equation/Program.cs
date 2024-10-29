@@ -34,7 +34,6 @@ namespace Equation
             int c = Convert.ToInt32(Console.ReadLine());
 
             float delta = ((float)b * (float)b) - (4 * (float)a * (float)c);
-            //Console.WriteLine("Delta ma wartość {0}", delta);
             if (delta < 0)
             {
                 Console.WriteLine("Delta ma wartość zero. Równanie nie ma rozwiązania");
@@ -54,6 +53,10 @@ namespace Equation
                 Console.WriteLine(outcome);
                 Console.ReadKey();
             }
+            /*testowane na:
+             * a=1 b=2 c=1  powinno wyjść x=-1
+             * a=-1 b=-2 c=3  powinno wyjść x1 = 1 i x2= -3
+            */
 
         }
     }
